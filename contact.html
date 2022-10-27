@@ -527,6 +527,8 @@
                 </div>
               </section> -->
         <form action="#">
+          <div
+               <form onsubmit="sendEmail(); reset(); return false;">
           <h3 class="contact-heading">Get in touch</h3>
             <div class="form-floating my-3">
               <input
@@ -579,6 +581,21 @@
         </form>
       </div>
     </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+ Email.send({
+    Host : "smtp.gmail.com",
+    Username : "topinsta49@gmail.com",
+    Password : "fofo1111",
+    To : 'castleclashfoufoued@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+   }
+  </script>
 
     <hr style="margin-left: 50px; margin-right: 50px" />
     <br /><br />
