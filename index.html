@@ -534,7 +534,12 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(response => {
+        msg.innerHTML="Thank You For Subscribing!!!"
+        setTimeout(function(){
+           msg.innerHTM=""
+        },5000)
+        form.reset()
       .catch(error => console.error('Error!', error.message))
   })
 </script>
