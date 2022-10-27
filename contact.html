@@ -527,7 +527,7 @@
                 </div>
               </section> -->
         <form action="#">
-          <div
+          <div class="cotainer">
                <form onsubmit="sendEmail(); reset(); return false;">
           <h3 class="contact-heading">Get in touch</h3>
             <div class="form-floating my-3">
@@ -594,7 +594,7 @@
     Body : "firstname: " + document.getElementById("firstname").value
         + "<br> lastname: " + document.getElementById("lastname").value
         + "<br> Email: " + document.getElementById("email").value
-        + "<br> message: " + document.getElementById("message").value
+        + "<br> Comments: " + document.getElementById("Comments").value
 }).then(
   message => alert("Message Sent Successfully")
 );
