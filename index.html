@@ -518,7 +518,7 @@
                     </div>
                     <div class="connect-form">
                       <form name="submit-to-google-sheet">
-                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <input type="Email" name="Email" placeholder="Enter your email" required>
                         <button type="submit">Subscribe</button>
                       </form>
                         <span id="msg"></span>
@@ -534,13 +534,8 @@
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-             msg.innerHtml = "Thank your For Subscibing!"
-             setTimeout(function(){
-               msg.innerHtml = ""               
-             },5000)
-             form.reset()
-    })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
       .catch(error => console.error('Error!', error.message))
   })
 </script>
