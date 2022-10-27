@@ -583,6 +583,7 @@
     </div>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
+    function sendEmail(){
  Email.send({
     Host : "smtp.gmail.com",
     Username : "topinsta49@gmail.com",
@@ -590,9 +591,12 @@
     To : 'castleclashfoufoued@gmail.com',
     From : document.getElementById("email").value,
     Subject : "New Contact Form",
-    Body : "And this is the body"
+    Body : "firstname: " + document.getElementById("firstname").value
+        + "<br> lastname: " + document.getElementById("lastname").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> message: " + document.getElementById("message").value
 }).then(
-  message => alert(message)
+  message => alert("Message Sent Successfully")
 );
    }
   </script>
