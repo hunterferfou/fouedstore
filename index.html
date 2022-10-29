@@ -517,7 +517,7 @@
 </h2>
                     </div>
                     <div class="connect-form">
-                          <!-- Begin Mailchimp Signup Form -->
+    <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
     <form action="https://fouedstore.us21.list-manage.com/subscribe/post?u=4381c950eda5b4f163d485e1c&amp;id=22fdcf2fd8&amp;f_id=0023c0e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
    <div id="mc_embed_signup_scroll">
@@ -538,30 +538,9 @@
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-                      </form>
-                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
-            
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyXZMdzN4nnDDvvVJs7EpIMvOR3EyyKKi7o3svGwwoPIM-6cvmU4-H10QyDJ_rtQClkGg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-  
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML="Thank You For Subscribing!!!"
-        setTimeout(function(){
-           msg.innerHTML=""
-        },5000)
-        form.reset()
-    })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
             
             <hr>
             <div class="containerDown">
