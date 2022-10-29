@@ -2686,3 +2686,132 @@ body {
 }
 
 ---------------------------------------------
+
+
+/* Mailchimp CSS */
+
+form .mc-field-group {
+    margin-bottom: 35px;
+}
+
+form .indicates-required {
+    color: #CCCDCF;
+    font-size: 0.5em;
+    margin: 35px 0;
+    text-align: center;
+}
+
+form input + .mce_inline_error {
+    display: inline-block;
+    font-size: 0.5em;
+    position: relative;
+}
+
+form input + .mce_inline_error:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #6B0505;
+    position: absolute;
+    top: -10px;
+}
+
+form #mce-success-response {
+    background: green;
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 12px;
+    transition: 1s;
+    animation: response 1s forwards;
+}
+
+form #mce-error-response {
+    background: #6B0505;
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+    border-radius: 12px;
+    transition: 1s;
+    animation: response 1s forwards;
+}
+form #mce-error-response a {
+    color: #fff;
+}
+
+form label .asterisk {
+    color: #89fcf3;
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+@keyframes response {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 80px 0;
+    }
+    header h1 {
+        font-size: 4em;
+    }
+}
+
+
+  ------------------------
+.connect {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.connect>h2 {
+  color: white;
+  margin-top: 30px;
+}
+
+.connect>form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.connect .email {
+  background-color: cornsilk;
+  padding: 10px 15px;
+  border: solid 1px;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 395px;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.connect .subscribe {
+  margin: 15px auto;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: red;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+form .subscribe:hover {
+  letter-spacing: 1px;
+  color: #ffe89e;
+  outline-style: none;
+}
